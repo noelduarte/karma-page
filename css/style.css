@@ -5,10 +5,38 @@ div {
     border: 1px solid Chocolate;
 }
 element.style {
-
 }
-.top-naviation > .content {
+.top-navigation {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+}
+.top-navigation .links {
+	float: right;
+	color: #838994;
+	font-size: 1.04em;
+	margin-top: 1.7em;
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+ol, ul {
+	list-style: none;
+}
+.top-navigation > .content {
 	height: 4.375rem;
+}
+.top-navigation .links li.active {
+	color: #4c5058;
+	font-weight: 500;
+}
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+.top-navigation .logo {
+	height: 4.374rem;
 }
 .content {
 	padding: 0 0.938rem;
@@ -20,7 +48,71 @@ div {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: "inherit";
+	font-family: "Roboto", sans-serif;
 	vertical-align: baseline;
 	box-sizing: border-box;
+}
+.introduction {
+	background-image: url('https://www.dropbox.com/s/trzctf6cn0w7cta/first-background%20copy.jpg?dl=0');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+}
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h1,
+.introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+	font-family: "Roboto", sans-serif;
+}
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.introduction .buttons {
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
+}
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.25rem;
+	font-family: "Roboto", sans-serif;
+}
+.cases {
+	background-color: #fff;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
+.cases .content {
+	margin-top: 7.875rem;
+	color: #1d1e21;
+	text-align: center;
+}
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+.cases .devices > li {
+	width: 33.33333%;
+	float: left;
+}
+.cases .devices h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.4rem 0px 1.875rem;
 }
